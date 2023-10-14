@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url(../Graphics/Gradient.png);
+    background-attachment: fixed;
+}
+
+a{
+ font-weight: bold;
+ position: relative;
+}
+nav a:before{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 5px;
+    width: 0;
+    background: #00D897;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+nav a:hover:before{
+   width: 100%;
+}
+
+
+/* Hero Section */
+.Hero {
+    min-height: 80vh;
+    height: 80vh;
+    width: 100vw;
+    max-width: 100vw;
+}
+
+.info {
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.carousel-item {
+    transition: opacity 0.5s ease-in-out;
+    /* Adjust the duration (0.5s) for your preferred smoothness */
+}
+
+.carousel-item.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Sector */
+.sectors {
+    min-height: 100vh;
+    height: 100vh;
+}
+.md-sector{
+    height: 50vh;
+}
+.lg-sectors{
+        min-height: 100vh;
+        height: 100vh;
+
+}
+
+.circle{
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+}
+
+.sector-section{
+    height: 100vh;
+}
+
+.green {
+    color: #00D897;
+    
+}
+
+a.green i:hover{
+    color: #00D897;
+}
+
+.hgreen:hover {
+    color: #00D897;
+    font-weight: 700;
+}

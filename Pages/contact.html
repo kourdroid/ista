@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body class="bg-slate-100">
+    <!-- Navbar -->
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <p class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img width="150px" src="../Graphics\ISTA ZENATA.png" alt="">
+            </p>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="../index.html" class="mr-5 text-gray-900">Home</a>
+                <a href="../Pages/About.html" class="mr-5 text-gray-900">About</a>
+                <a href="../Pages/Activities.html" class="mr-5 text-gray-900">Activities</a>
+                <a href="../Pages/Gallery.html" class="mr-5 text-gray-900">Gallery</a>
+                <a href="../Pages/contact.html" class="mr-5 text-gray-900">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Contact -->
+    <section class="hero">
+        <div class="container mx-auto ">
+            <div class="lg:flex lg:space-x-12 space-y-72 lg:space-y-0 my-20 justify-between items-center">
+                <!-- Form Input -->
+                <div class="w-full space-y-5">
+                    <div class="text-left text-slate-800 font-black text-4xl uppercase  tracking-widest">Contact Us<span class="green">.</span></div>
+                        <div class="space-y-2">
+                            <label for="input-group-2" class="block  text-md font-bold text-slate-600">Name</label>
+                            <input type="text" id="input-group-2" class="bg-gray-50 border shadow-md shadow-slate-300 border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-3 " placeholder="enter your name">
+                        </div>
+                        <div class="space-y-2">   
+                            <label for="input-group-1" class="block  text-md font-bold text-slate-600">E-Mail</label>
+                            <div class="relative mb-6">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 20 16">
+                                        <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                                        <path
+                                            d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                                    </svg>
+                                </div>
+                                
+                                <input type="text" id="input-group-1"
+                                    class="bg-gray-50 border shadow-md shadow-slate-300 border-gray-300 text-gray-900 text-sm rounded-lg block w-full pl-10 p-3 "placeholder="name@zenata.com">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label for="message" class="block  text-md font-bold text-slate-600">Message</label>
+                            <textarea id="message" rows="4"
+                                class="block p-3 w-full text-sm shadow-md shadow-slate-300 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 "
+                                placeholder="Write your Message here..."></textarea>
+                        </div>
+                        <div class="">
+                            <button class="mt-20 greenbg text-white text-2xl font-bold uppercase rounded-xl shadow-md shadow-slate-300 w-full py-5">Send</button>
+                        </div>
+                </div>
+                <!-- Info Card -->
+                <div class="w-full mx-auto justify-center items-center rounded-2xl bg-slate-800 p-28 space-y-8 shadow-lg shadow-slate-300">
+                    <!-- title -->
+                    <div class="text-white font-black text-4xl py-10 uppercase tracking-widest">Info<span class="green">.</span></div>
+                    <!-- mail -->
+                    <div class="flex items-center space-x-9">
+                        <div class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 80 80" fill="none">
+                                <path
+                                    d="M66.667 13.3333H13.3337C9.65699 13.3333 6.66699 16.3233 6.66699 20V60C6.66699 63.6767 9.65699 66.6667 13.3337 66.6667H66.667C70.3437 66.6667 73.3337 63.6767 73.3337 60V20C73.3337 16.3233 70.3437 13.3333 66.667 13.3333ZM66.667 20V21.7033L40.0003 42.4467L13.3337 21.7067V20H66.667ZM13.3337 60V30.1467L37.9537 49.2967C38.5374 49.7552 39.2581 50.0044 40.0003 50.0044C40.7426 50.0044 41.4633 49.7552 42.047 49.2967L66.667 30.1467L66.6737 60H13.3337Z"
+                                    fill="#00D897" />
+                            </svg>
+                        </div>
+                        <div class="text-white font-norma text-3xl px-5 tracking-widest">zenata@ofppt.ma</div>
+                    </div>
+                    <!-- phone-number -->
+                    <div class="flex items-center space-x-9">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 80 80" fill="none">
+                                <path
+                                    d="M59.0231 40.9767C58.7139 40.6669 58.3465 40.4211 57.9421 40.2534C57.5377 40.0857 57.1043 39.9993 56.6665 39.9993C56.2287 39.9993 55.7952 40.0857 55.3908 40.2534C54.9865 40.4211 54.6191 40.6669 54.3098 40.9767L48.9965 46.29C46.5331 45.5567 41.9365 43.89 39.0231 40.9767C36.1098 38.0633 34.4431 33.4667 33.7098 31.0033L39.0231 25.69C39.333 25.3807 39.5788 25.0134 39.7465 24.609C39.9142 24.2046 40.0005 23.7711 40.0005 23.3333C40.0005 22.8956 39.9142 22.4621 39.7465 22.0577C39.5788 21.6533 39.333 21.286 39.0231 20.9767L25.6898 7.64334C25.3805 7.33352 25.0132 7.08773 24.6088 6.92002C24.2044 6.75232 23.7709 6.666 23.3331 6.666C22.8954 6.666 22.4619 6.75232 22.0575 6.92002C21.6531 7.08773 21.2858 7.33352 20.9765 7.64334L11.9365 16.6833C10.6698 17.95 9.95648 19.69 9.98314 21.4667C10.0598 26.2133 11.3165 42.7 24.3098 55.6933C37.3031 68.6867 53.7898 69.94 58.5398 70.02H58.6331C60.3931 70.02 62.0565 69.3267 63.3165 68.0667L72.3565 59.0267C72.6663 58.7174 72.9121 58.35 73.0798 57.9457C73.2475 57.5413 73.3338 57.1078 73.3338 56.67C73.3338 56.2322 73.2475 55.7987 73.0798 55.3944C72.9121 54.99 72.6663 54.6226 72.3565 54.3133L59.0231 40.9767ZM58.5998 63.35C54.4398 63.28 40.2065 62.1633 29.0231 50.9767C17.8031 39.7567 16.7165 25.4733 16.6498 21.3967L23.3331 14.7133L31.9531 23.3333L27.6431 27.6433C27.2514 28.0348 26.9633 28.5178 26.805 29.0486C26.6467 29.5793 26.6231 30.1412 26.7365 30.6833C26.8165 31.0667 28.7731 40.1567 34.3065 45.69C39.8398 51.2233 48.9298 53.18 49.3131 53.26C49.855 53.3765 50.4174 53.3549 50.9486 53.197C51.4799 53.0392 51.9629 52.7502 52.3531 52.3567L56.6665 48.0467L65.2865 56.6667L58.5998 63.35Z"
+                                    fill="#00D897" />
+                            </svg>
+                        </div>
+                        <div class="text-white font-norma text-3xl px-5 tracking-widest">05 32 78 9 21</div>
+                    </div>
+                    <!-- place -->
+                    <div class="flex items-center space-x-9">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 80 80" fill="none">
+                                <path
+                                    d="M63.3333 6.66667H30C26.3233 6.66667 23.3333 9.65667 23.3333 13.3333V33.3333H16.6667C12.99 33.3333 10 36.3233 10 40V70C10 70.8841 10.3512 71.7319 10.9763 72.357C11.6014 72.9821 12.4493 73.3333 13.3333 73.3333H66.6667C67.5507 73.3333 68.3986 72.9821 69.0237 72.357C69.6488 71.7319 70 70.8841 70 70V13.3333C70 9.65667 67.01 6.66667 63.3333 6.66667ZM16.6667 40H36.6667V66.6667H16.6667V40ZM63.3333 66.6667H43.3333V40C43.3333 36.3233 40.3433 33.3333 36.6667 33.3333H30V13.3333H63.3333V66.6667Z"
+                                    fill="#00D897" />
+                                <path
+                                    d="M36.6663 20H43.333V26.6667H36.6663V20ZM49.9997 20H56.6663V26.6667H49.9997V20ZM49.9997 33.4367H56.6663V40H49.9997V33.4367ZM49.9997 46.6667H56.6663V53.3333H49.9997V46.6667ZM23.333 46.67H29.9997V53.3367H23.333V46.67Z"
+                                    fill="#00D897" />
+                            </svg>
+                        </div>
+                        <div class="text-white font-norma text-3xl px-5 tracking-widest">Aïn Harrouda</div>
+                    </div>
+                    <!-- timing -->
+                    <div class="flex items-center space-x-9">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 80 80" fill="none">
+                                <path
+                                    d="M40.0003 6.66667C21.6203 6.66667 6.66699 21.62 6.66699 40C6.66699 58.38 21.6203 73.3333 40.0003 73.3333C58.3803 73.3333 73.3337 58.38 73.3337 40C73.3337 21.62 58.3803 6.66667 40.0003 6.66667ZM40.0003 66.6667C25.297 66.6667 13.3337 54.7033 13.3337 40C13.3337 25.2967 25.297 13.3333 40.0003 13.3333C54.7037 13.3333 66.667 25.2967 66.667 40C66.667 54.7033 54.7037 66.6667 40.0003 66.6667Z"
+                                    fill="#00D897" />
+                                <path d="M43.3337 23.3333H36.667V43.3333H56.667V36.6667H43.3337V23.3333Z" fill="#00D897" />
+                            </svg>
+                        </div>
+                        <div class="text-white font-norma text-3xl px-5 tracking-widest">8:30 - 18:30</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero lg:hidden">
+
+    </section>
+
+    <footer class="bg-slate-900 ">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center">
+                    <!-- Logo & Infos -->
+                    <div class="py-10 ">
+                        <div><img width="200px" src="./Graphics/ISTA ZENATA_WHITE.png" alt=""></div>
+                        <div class="text-slate-50 py-5 space-y-5">
+                            <p>ISTA ZENATA, Aïn Harrouda</p>
+                            <p>zenata@ofppt.ma</p>
+                            <p>05 32 78 95 21</p>
+                        </div>
+                    </div>
+                    <!-- Menus -->
+                    <div class="flex flex-col text-slate-50 font-medium space-y-4">
+                        <a class="hgreen" href="../index.html">Home</a>
+                        <a class="hgreen" href="../Pages/About.html">About</a>
+                        <a class="hgreen" href="../Pages/Activities.html">Activities</a>
+                        <a class="hgreen" href="../Pages/Gallery.html">Gallery</a>
+                        <a class="hgreen" href="../Pages/contact.html">Contact</a>
+                    </div>
+                </div>
+                <!-- Social Media -->
+                <div>
+                    <div>
+                        <div class="flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1226" height="4" viewBox="0 0 1226 4" fill="none">
+                                <path d="M2 2H1224" stroke="white" stroke-width="4" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="flex space-x-10 justify-center py-5">
+                            <a class="green" href="#">
+                                <i class="text-slate-50 text-3xl hover:green fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="green" href="#">
+                                <i class="text-slate-50 text-3xl hover:green fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="green" href="#">
+                                <i class="text-slate-50 text-3xl hover:green fa-brands fa-square-x-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+
+</body>
+</html>
