@@ -18,19 +18,6 @@ li a{
  font-weight: bold;
  position: relative;
 }
-nav li a:before{
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    height: 5px;
-    width: 0;
-    background: #00D897;
-    border-radius: 50px;
-    transition: width 0.3s ease;
-}
-nav li a:hover:before{
-   width: 100%;
-}
 
 
 /* Hero Section */
