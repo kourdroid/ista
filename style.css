@@ -18,7 +18,7 @@ li a{
  font-weight: bold;
  position: relative;
 }
-nav a:before{
+nav li a:before{
     content: "";
     position: absolute;
     bottom: -3px;
@@ -28,7 +28,7 @@ nav a:before{
     border-radius: 50px;
     transition: width 0.3s ease;
 }
-nav a:hover:before{
+nav li a:hover:before{
    width: 100%;
 }
 
