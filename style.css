@@ -1,4 +1,6 @@
+/* Importing */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 * {
     margin: 0;
@@ -7,12 +9,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Gradient Background */
 body {
-    background: url(../Graphics/Gradient.png);
-    background-attachment: fixed;
+    background: url(./Graphics/Gradient.png) no-repeat;
 }
 
-a{
+li a{
  font-weight: bold;
  position: relative;
 }
