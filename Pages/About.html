@@ -1,112 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="About.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css">
+    <title>ISTA</title>
+
 </head>
-<body class="bg-slate-200">
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <p class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <img width="150px" src="../Graphics\ISTA ZENATA.png" alt="">
-            </p>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a href="../index.html" class="mr-5 text-gray-900">Home</a>
-                <a href="../Pages/About.html" class="mr-5 text-gray-900">About</a>
-                <a href="../Pages/Activities.html" class="mr-5 text-gray-900">Activities</a>
-                <a href="../Pages/Gallery.html" class="mr-5 text-gray-900">Gallery</a>
-                <a href="../Pages/contact.html" class="mr-5 text-gray-900">Contact</a>
-            </nav>
-        </div>
+<body class="background font-[Montserrat]">
+    <!-- Navigation Bar -->
+    <header class="container mx-auto">
+        <nav class="flex justify-between items-center py-8 mx-auto">
+            <div
+                class="uppercase leading-6 text-slate-800 font-black text-3xl hover:text-white hover:scale-105 hover:drop-shadow-xl transition-all  duration-200 ease-in">
+                <a href="/index.html">
+                    ista<br>Zenata<span class="text-white">.</span>
+                </a>
+            </div>
+            <div
+                class="container mx-auto right-0 rounded-lg nav-links duration-0 lg:static text-center justify-center absolute bg-slate-100 bg-opacity-30 backdrop-blur-xl border border-white lg:border-none  lg:bg-transparent lg:backdrop-blur-none lg:shadow-none shadow-lg lg:min-h-fit min-h-[45vh] left-0 top-[-100%] lg:justify-end w-full flex items-center">
+                <ul class="flex font-semibold text-xl lg:flex-row flex-col lg:items-center lg:gap-[4vw] gap-8">
+                    <li>
+                        <a class="text-slate-800  rounded-md hover:font-extrabold transition-all ease-in"
+                            href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="text-slate-800  rounded-md hover:font-extrabold  transition-al  ease-in"
+                            href="./">About</a>
+                    </li>
+                    <li>
+                        <a class="text-slate-800  rounded-md hover:font-extrabold transition-all ease-in"
+                            href="#">Activities</a>
+                    </li>
+                    <li>
+                        <a class="text-slate-800  rounded-md hover:font-extrabold transition-all ease-in"
+                            href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="text-slate-800  rounded-md hover:font-extrabold transition-all ease-in"
+                            href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu"
+                    class="text-3xl cursor-pointer lg:hidden text-slate-800 hover:text-slate-200 transition-all duration-100 ease-in"></ion-icon>
+            </div>
     </header>
 
-    <!-- Hero -->
-    <section class="flex-col">
-        <div class="title ">
-            <p class="text-center font-black text-slate-800 tracking-widest text-4xl py-12">ABOUT<span class="green">.</span></p>
-        </div>
-        <div class="container mx-auto flex-col-reverse lg:flex  lg:flex-row-reverse lg:justify-between lg:gap-10 lg:flex-shrink items-center space-y-10">
-            <div class="w-full">
-            <p class="tracking-wider space-y-10 leading-loose font-bold text-lg text-center text-slate-600 md:text-left">L’OFPPT confirme son engagement en matière de développement durable. C’est à Zenata qu’il a célébré ce 19 janvier 2023 la certification de son nouvel institut spécialisé de technologie appliquée (ISTA), du label Haute Qualité Environnementale, récompensant les performances énergétiques, environnementales, de santé et de confort optimales, pour devenir le 1er et le seul Centre de formation au Maroc à décrocher une certification HQE Bâtiment niveau Excellent. Ce label international vient ainsi inscrire l’OFPPT dans une vision alliant qualité, respect de l’environnement et management responsable. </p>
-            </div>
-            <div class="w-full ">
-            <img class="rounded-lg shadow-xl shadow-slate-400" src="../Image/ista.jpeg">
-            </div>
-        </div>  
-    </section>
-    <!-- OFPPT LOGO -->
-    <section class="container mx-auto flex justify-cente space-x-10 items-center justify-center my-20">
-        <div class="title-container greenbg py-5 px-14 font-black text-slate-800 tracking-widest rounded-xl shadow-xl shadow-slate-300">OFPPT</div>
-        <div class="Def font-extrabold text-slate-800 uppercase tracking-widest"> Office de la formation Professionnel Et Du promotion De Travail.</div>
-    </section>
-
-
-
-
-
-  <footer class="bg-slate-900 ">
-        <div class="container mx-auto">
-            <div class="flex justify-between items-center">
-                <!-- Logo & Infos -->
-                <div class="py-10 ">
-                    <div><img width="200px" src="./Graphics/ISTA ZENATA_WHITE.png" alt=""></div>
-                    <div class="text-slate-50 py-5 space-y-5">
-                        <p>ISTA ZENATA, Aïn Harrouda</p>
-                        <p>zenata@ofppt.ma</p>
-                        <p>05 32 78 95 21</p>
-                    </div>
-                </div>
-                <!-- Menus -->
-                <div class="flex flex-col text-slate-50 font-medium space-y-4">
-                    <a class="hgreen" href="../index.html">Home</a>
-                    <a class="hgreen" href="../Pages/About.html">About</a>
-                    <a class="hgreen" href="../Pages/Activities.html">Activities</a>
-                    <a class="hgreen" href="../Pages/Gallery.html">Gallery</a>
-                    <a class="hgreen" href="">Contact</a>
-                </div>
-            </div>
-            <!-- Social Media -->
-            <div>
-                <div>
-                    <div class="flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1226" height="4" viewBox="0 0 1226 4"
-                            fill="none">
-                            <path d="M2 2H1224" stroke="white" stroke-width="4" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <div class="flex space-x-10 justify-center py-5">
-                        <a class="green" href="#">
-                            <i class="text-slate-50 text-3xl hover:green fa-brands fa-facebook"></i>
-                        </a>
-                        <a class="green" href="#">
-                            <i class="text-slate-50 text-3xl hover:green fa-brands fa-instagram"></i>
-                        </a>
-                        <a class="green" href="#">
-                            <i class="text-slate-50 text-3xl hover:green fa-brands fa-square-x-twitter"></i>
-                        </a>
-                    </div>
-                </div>
+    <!-- Ofppt Section -->
+    <section class="py-20">
+        <div class="container mx-auto ">
+            <div class="text-center text-4xl font-black text-slate-800 " >About<span class="text-[#00D897]">.</spa></div>
+            <div class="flex flex-col space-y-10 lg:flex lg:flex-row  py-20 justify-center items-center gap-5">
+                <div class=" lg:w-10/12  flex justify-center"><img height="215px" src="../Graphics/ofppt_logo.png" alt=""></div>
+                <div class="w-11/12  lg:w-3/4 flex justify-center bg-gradient-to-r shadow-2xl shadow-[#3F3D564D] from-slate-200 p-10 rounded-lg text-xl lg:text-2xl text-slate-700 font-semibold">L'Office de la formation professionnelle et de la promotion du travail (OFPPT) est un opérateur public en formation
+                professionnelle, couvrant le territoire marocain.</div>
             </div>
         </div>
-    </footer>
+    </section>
+
+    <!-- Image Slider -->
+    <section class=" my-20 container mx-auto">
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="../Images/photo_2023-10-12_15-13-30.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="../Images/photo_2023-10-12_15-13-31.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="../Images/photo_2023-10-12_15-13-39.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="../Images/photo_2023-10-12_15-15-20.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="../Images/photo_2023-10-20_23-31-31.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Our Mission -->
+    <section class="bg-gradient-to-tr from-[#00D897] to-[#00D897B3] h-full">
+        <div class="container mx-auto py-10 px-5">
+            <div class="uppercase text-6xl font-black tracking-widest text-center text-white">Our Mission</div>
+            <div class="flex flex-col-reverse md:flex md:flex-row justify-center items-center gap-32 py-20">
+                <div class= "items-center w-11/12 md:w-2/3 text-4xl text-slate-700 opacity-75 font-semibold text-center md:text-left">At OFPPT ISTA Zenata, our mission is to provide high-quality vocational and technical education to empower our students
+                with the skills and knowledge they need to excel in their chosen fields. We are dedicated to fostering a culture of
+                innovation, creativity, and lifelong learning.</div>
+                <div class="w-2/3 md:w-2/4"><img class="drop-shadow-lg" src="../Graphics/Arrow_white.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Commitement -->
+    <section class="h-[100vh]">
+        <div class="container mx-auto justify-center items-center h-full text-slate-800 ">
+            <div class="text-6xl uppercase py-10 font-black text-center">Our Commitement</div>
+            <div class="flex justify-center items-center container mx-auto bg-[#BFCCD3] py-20 px-5 rounded-lg">
+                <div class="w-full"><img src="../Graphics/Commitment.svg" alt=""></div>
+                <div class="bg-slate-100 rounded-lg w-full">
+                    <div id="accordion-flush" class="p-5 rounded-xl" data-accordion="collapse"
+                        data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                        data-inactive-classes="text-gray-500 dark:text-gray-400">
+                        <h2 id="accordion-flush-heading-1" >
+                            <button type="button"
+                                class="flex items-center justify-between w-full px-5 py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                                data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                                <span>Excellence in Education.</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 px-5 text-gray-500 dark:text-gray-400">We are committed to maintaining the highest standards of academic excellence and ensuring that our curriculum is
+                                relevant to the evolving needs of industries.</p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-flush-heading-2">
+                            <button type="button"
+                                class="flex items-center justify-between w-full px-5 py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                                data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
+                                aria-controls="accordion-flush-body-2">
+                                <span>Industry-Relevant Training.</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the
+                                    Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+                                <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/"
+                                        class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the
+                                    utility classes from Tailwind CSS and components from Flowbite.</p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-flush-heading-3">
+                            <button type="button"
+                                class="flex items-center justify-between w-full px-5 py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                                data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
+                                aria-controls="accordion-flush-body-3">
+                                <span>Empowering Students.</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from
+                                    Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another
+                                    difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers
+                                    sections of pages.</p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite,
+                                    Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of
+                                    two worlds.</p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                                <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                                    <li><a href="https://flowbite.com/pro/"
+                                            class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                                    <li><a href="https://tailwindui.com/" rel="nofollow"
+                                            class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
 
 
 
-
-
-
-
-
-
-
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="../script.js"></script>
 </body>
+
 </html>
