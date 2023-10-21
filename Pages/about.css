@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.plan{
+    background-image: url(../Graphics/Plan.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
