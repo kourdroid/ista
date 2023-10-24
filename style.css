@@ -5,7 +5,7 @@ html{
     scroll-snap-type:y mandatory;
 }
 
-section{
+section,footer,header{
     scroll-snap-align: center;
 }
 
