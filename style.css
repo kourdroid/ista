@@ -1,13 +1,15 @@
 /* Importing */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* html{
-    scroll-snap-type:y proximity;
+html {
+    scroll-snap-type: y proximity;
 }
 
-section,footer,header{
+section,
+footer,
+header {
     scroll-snap-align: center;
-} */
+}
 
 * {
     margin: 0;
@@ -21,9 +23,9 @@ body {
     background: url(./Graphics/Gradient.png) no-repeat;
 }
 
-li a{
- font-weight: bold;
- position: relative;
+li a {
+    font-weight: bold;
+    position: relative;
 }
 
 
@@ -60,31 +62,33 @@ li a{
     min-height: 100vh;
     height: 100vh;
 }
-.md-sector{
+
+.md-sector {
     height: 50vh;
 }
-.lg-sectors{
-        min-height: 100vh;
-        height: 100vh;
+
+.lg-sectors {
+    min-height: 100vh;
+    height: 100vh;
 
 }
 
-.circle{
+.circle {
     width: 180px;
     height: 180px;
     flex-shrink: 0;
 }
 
-.sector-section{
+.sector-section {
     height: 100vh;
 }
 
 .green {
     color: #00D897;
-    
+
 }
 
-a.green i:hover{
+a.green i:hover {
     color: #00D897;
 }
 
