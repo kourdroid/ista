@@ -13,8 +13,8 @@
 
 <body class="gradient_bg bg-slate-200 overflow-x-hidden">
     <!-- Navigation Bar -->
-    <header class="px-3 container mx-auto transition-all duration-300 ease-in-out">
-        <nav class="flex justify-between items-center py-8 mx-auto">
+    <header class="z-50 px-3 container mx-auto transition-all duration-300 ease-in-out">
+        <nav class=" z-50 flex justify-between items-center py-8 mx-auto">
             <div
                 class="uppercase leading-6 text-slate-800 font-black text-3xl hover:text-white hover:scale-105 hover:drop-shadow-xl transition-all  duration-200 ease-in">
                 <a href="./index.html">
@@ -22,8 +22,8 @@
                 </a>
             </div>
             <div
-                class="container mx-auto right-0  nav-links duration-0 lg:static text-center justify-center absolute bg-slate-100 lg:border-none  lg:bg-transparent lg:backdrop-blur-none lg:shadow-none shadow-xl lg:min-h-fit min-h-[70vh] left-0 top-[-100%] lg:justify-end w-full flex items-center">
-                <ul class="flex font-semibold text-xl lg:flex-row flex-col lg:items-center lg:gap-[4vw] gap-8">
+                class=" z-50 container mx-auto right-0  nav-links duration-0 lg:static text-center justify-center absolute bg-slate-100 lg:border-none  lg:bg-transparent lg:backdrop-blur-none lg:shadow-none shadow-xl lg:min-h-fit min-h-[70vh] left-0 top-[-100%] lg:justify-end w-full flex items-center">
+                <ul class="z-50 flex font-semibold text-xl lg:flex-row flex-col lg:items-center lg:gap-[4vw] gap-8">
                     <li class=" transition-all duration-200 ease-in-out p-2 hover:bg-[#00D897] lg:hover:bg-opacity-50">
                         <a class="text-slate-800  transition-all ease-in"
                             href="./index.html">Home</a>
@@ -53,12 +53,12 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero h-full flex justify-center items-center py-52">
-      <div class="absolute z-[0] top-[12.2%] -bottom-full right-0 left-0 bg-slate-200 bg-opacity-50 w-full md:hidden"></div>
+    <section class="hero h-full flex justify-center items-center py-52 px-5">
+      <div class="absolute z-[0] top-[12.2%] -bottom-full right-0 left-0 bg-slate-200 bg-opacity-70 w-full md:hidden"></div>
       <div class="container mx-auto flex flex-col justify-center items-start space-y-14 w-full">
         <div class="w-full relative z-[1] px-10 md:px-0 md:w-2/5 text-center mx-auto md:mx-0 md:text-left text-6xl md:text-8xl font-extrabold text-slate-800">Unlock Your Future at ISTA ZENATA.</div>
         <div class="w-1/2 relative z-[1] text-center mx-auto md:mx-0 md:text-left font-semibold text-2xl text-slate-500">Explore Our Cutting-Edge Programs and Ignite Your Career Journey Today!</div>
-        <div class="mx-auto md:mx-0 h-16 relative z-[1] bg-slate-100 flex p-2 w-2/3 justify-between shadow-xl"><input class="bg-transparent pl-4 w-2/3 outline-none"  type="text" placeholder="EMAIL ADRESS"><button class="bg-[#00D897] px-5 font-bold text-slate-800 hover:bg-[#48c6a0] md:hover:tracking-[0.2em] transition-all duration-200 ease-in-out">Get Started</button></div>
+        <div class="mx-auto md:mx-0 h-16 relative z-[1] bg-slate-100 flex p-2 w-2/3 justify-between shadow-xl"><input class="bg-transparent pl-4 w-[50%] md:w-2/3 outline-none"  type="text" placeholder="EMAIL ADRESS"><button class="bg-[#00D897] px-5 font-bold text-slate-800 hover:bg-[#48c6a0] md:hover:tracking-[0.2em] transition-all duration-200 ease-in-out text-sm md:text-lg">Get Started</button></div>
       </div>
     </section>
 
@@ -120,9 +120,9 @@
             </figcaption>
             <!-- Pop Over Overlay -->
             <div data-popover id="popover-default" role="tooltip"
-              class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
-              <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-                <h3 class="font-semibold text-gray-900 dark:text-white">Mr. El Kashash Lahna</h3>
+              class="absolute z-10 invisible inline-block w-64 text-sm text-slate-500 transition-opacity duration-300 bg-slate-200 border border-slate-200 rounded-lg shadow-xl opacity-0 dark:text-slate-400 dark:border-slate-600 dark:bg-slate-800">
+              <div class="px-3 py-2 bg-slate-100 border-b border-slate-200 rounded-t-lg dark:border-slate-600 dark:bg-slate-700">
+                <h3 class="font-semibold text-slate-900 dark:text-white">Mr. El Kashash Lahna</h3>
               </div>
               <div class="flex justify-center rounded-full py-5"><img class="rounded-full" src="./Images/director.png" alt=""></div>
               <div class="px-3 pb-2">
