@@ -1,6 +1,6 @@
 # ISTA ZENATA Website
 
-This repository contains the source code for the ISTA ZENATA website. The website serves as a platform to showcase the skills and expertise of Sir Mehdi, a professional graphic designer and 3D modeler. It also provides educational content related to Blender and design techniques.
+This repository contains the source code for the ISTA ZENATA website. The website serves as a platform to showcase the skills and expertise of Mehdi, Achraf, Najib, Othman, a professional. It also provides educational content related to Ista Zenata in General.
 
 ## Features
 
