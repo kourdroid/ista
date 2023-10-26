@@ -3,6 +3,7 @@
 
 html {
     scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
 }
 
 section,
@@ -21,6 +22,17 @@ header {
 /* Gradient Background */
 body {
     background: url(./Graphics/Gradient.png) no-repeat;
+
+} 
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+    --tw-bg-opacity: 1;
+        background-color: rgb(226 232 240 / var(--tw-bg-opacity))
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #00D897;
 }
 
 li a {
