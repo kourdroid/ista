@@ -14,7 +14,7 @@
     <title>GALLERY | ISTA ZENATA</title>
 </head>
 
-<body class="background bg-slate-200 font-[Montserrat]">
+<body class="background bg-slate-200 font-[Montserrat] overflow-x-hidden">
     <!-- Navigation Bar -->
     <header class="z-50 px-3 container mx-auto transition-all duration-300 ease-in-out">
       <nav class="z-50 flex justify-between items-center py-8 mx-auto">
@@ -25,7 +25,7 @@
           </a>
         </div>
         <div
-          class="container mx-auto right-0  nav-links duration-0 lg:static text-center justify-center absolute bg-slate-100 lg:border-none  lg:bg-transparent lg:backdrop-blur-none lg:shadow-none shadow-xl lg:min-h-fit min-h-[70vh] left-0 top-[-100%] lg:justify-end w-full flex items-center">
+          class="container mx-auto right-0 z-50 nav-links duration-0 lg:static text-center justify-center absolute bg-slate-100 lg:border-none  lg:bg-transparent lg:backdrop-blur-none lg:shadow-none shadow-xl lg:min-h-fit min-h-[70vh] left-0 top-[-100%] lg:justify-end w-full flex items-center">
           <ul class="z-50 flex font-semibold text-xl lg:flex-row flex-col lg:items-center lg:gap-[4vw] gap-8">
             <li class="transition-all duration-200 ease-in-out p-2 hover:bg-slate-200 lg:hover:bg-opacity-50">
               <a class="text-slate-800  transition-all ease-in" href="../index.html">Home</a>
@@ -49,28 +49,30 @@
             class="text-3xl cursor-pointer lg:hidden text-slate-800 hover:text-slate-200 transition-all duration-100 ease-in"></ion-icon>
         </div>
     </header>
-    <section class="bg-slate-200">
-      <div class="absolute top-[12.3%] bottom-[-31%] left-0 right-0 bg-gradient-to-t from-slate-200 z-[3]"><img src="../Graphics/Gradient.png" alt=""></div>
-            <div class="absolute top-[12.3%] bottom-[-31%] left-0 right-0 bg-gradient-to-b from-slate-200 z-[2]"></div>
-      <div class="absolute top-[12.3%] bottom-[-31%] left-0 right-0 bg-gradient-to-t from-slate-200 z-[2]"></div>
-      <div class="absolute top-[12.3%] bottom-[-31%] left-0 right-0 bg-slate-800 bg-opacity-30"></div>
-      <div class="mx-auto w-full absolute z-[-1]">
-        <video muted autoplay inlines-play loop class="w-full" src="OFPPT - Une formation de qualité pour des métiers d'avenir (1).mp4" class="vid"></video>    
+
+    <!-- Video Background Section -->
+    <section class="bg-slate-200 overflow-hidden w-[100vw] h-[100vh] ">
+      <div class="absolute top-[12.3%] bottom-[-31%] overflow-hidden w-[100vw] h-[100vh] left-0 right-0 bg-gradient-to-t from-slate-200 z-[2]"><img src="../Graphics/Gradient.png" alt=""></div>
+      <div class="absolute top-[12.3%] bottom-[-31%] overflow-hidden w-[100vw] h-[100vh] left-0 right-0 bg-gradient-to-b from-slate-200 z-[1]"></div>
+      <div class="absolute top-[12.3%] bottom-[-31%] overflow-hidden w-[100vw] h-[100vh] left-0 right-0 bg-gradient-to-t from-slate-200 z-[0]"></div>
+      <div class="absolute top-[12.3%] bottom-[-31%] overflow-hidden w-[100vw] h-[100vh] left-0 right-0 bg-slate-800 bg-opacity-30"></div>
+      <div class=" w-[100vw] h-[100vh] overflow-hidden">
+        <video muted autoplay inlines-play loop class=" object-cover w-[100vw] h-[100vh] overflow-hidden absolute z-[0]" src="OFPPT - Une formation de qualité pour des métiers d'avenir (1).mp4" class="vid"></video>    
+      </div>
+      <div class="overflow-hidden absolute top-[10%] left-0 right-0 bottom-0 w-full h-full text-center text-6xl font-black text-slate-800 z-10 flex items-center tracking-widest justify-center">
+                GALLERY<span class="text-[#00D897]">.</spa>
       </div>
     </section>
 
 
   <!-- gallery Section -->
-  <section class="py-20 ">
+  <section class="pb-">
     <div class=" mx-auto ">
-        <div class="text-center text-6xl font-black text-slate-800 h-[90vh] relative z-10 flex items-center tracking-widest justify-center">GALLERY<span class="text-[#00D897]">.</spa>
-        </div>
-
         <!-- video section-->
-        <section class=" py-20">
+        <section class="">
           <!-- gallery section-->
           <section class="text-gray-600 body-font">
-                    <div class="container px-5 py-24 mx-auto">
+                    <div class="container px-5 mx-auto">
                       <div class="flex flex-col text-center w-full mb-20">
                       
                       </div>
@@ -226,7 +228,7 @@
 
                 
 
-    <footer class="text-slate-600 body-font">
+    <footer class="text-slate-600 body-font bg-slate-200">
       <div
         class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">

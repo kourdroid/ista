@@ -1,3 +1,4 @@
 body{
-    background-image: url(./Gradient.png);
+    background-image: url(../Graphics/Gradient.png);
+    object-fit: fill;
 }
