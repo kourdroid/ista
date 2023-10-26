@@ -22,7 +22,7 @@ header {
 /* Gradient Background */
 body {
     background: url(./Graphics/Gradient.png) no-repeat;
-    background-size: auto;
+    object-fit: fill;
 
 
 } 
