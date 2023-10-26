@@ -12,17 +12,11 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="gallery.css">
     <title>GALLERY | ISTA ZENATA</title>
-<style>
-    .vid{
-       
-        width: 1300px;
-    }
-</style>
 </head>
 
 <body class="background bg-slate-200 font-[Montserrat]">
     <!-- Navigation Bar -->
-    <header class="z-50 container mx-auto transition-all duration-300 ease-in-out">
+    <header class="z-50 px-3 container mx-auto transition-all duration-300 ease-in-out">
       <nav class="z-50 flex justify-between items-center py-8 mx-auto">
         <div
           class="uppercase leading-6 text-slate-800 font-black text-3xl hover:text-white hover:scale-105 hover:drop-shadow-xl transition-all  duration-200 ease-in">
@@ -55,23 +49,27 @@
             class="text-3xl cursor-pointer lg:hidden text-slate-800 hover:text-slate-200 transition-all duration-100 ease-in"></ion-icon>
         </div>
     </header>
+    <section class="bg-slate-200">
+      <div class="absolute top-[12.3%] bottom-[-31%] left-0 right-0 bg-gradient-to-t from-slate-200 z-[3]"><img src="../Graphics/Gradient.png" alt=""></div>
+            <div class="absolute top-[12.3%] bottom-[-31%] left-0 right-0 bg-gradient-to-b from-slate-200 z-[2]"></div>
+      <div class="absolute top-[12.3%] bottom-[-31%] left-0 right-0 bg-gradient-to-t from-slate-200 z-[2]"></div>
+      <div class="absolute top-[12.3%] bottom-[-31%] left-0 right-0 bg-slate-800 bg-opacity-30"></div>
+      <div class="mx-auto w-full absolute z-[-1]">
+        <video muted autoplay inlines-play loop class="w-full" src="OFPPT - Une formation de qualité pour des métiers d'avenir (1).mp4" class="vid"></video>    
+      </div>
+    </section>
+
 
   <!-- gallery Section -->
-  <section class="py-20">
+  <section class="py-20 ">
     <div class=" mx-auto ">
-        <div class="text-center text-4xl font-black text-slate-800 ">GALLERY<span class="text-[#00D897]">.</spa>
+        <div class="text-center text-6xl font-black text-slate-800 h-[90vh] relative z-10 flex items-center tracking-widest justify-center">GALLERY<span class="text-[#00D897]">.</spa>
         </div>
 
         <!-- video section-->
-        <section class="py-20">
-            <div class="mx-auto w-full">
-                <video class="w-full" src="OFPPT - Une formation de qualité pour des métiers d'avenir (1).mp4" controls class="vid"></video>
-              
-            </div>
-
-
-                 <!-- gallery section-->
-                 <section class="text-gray-600 body-font">
+        <section class=" py-20">
+          <!-- gallery section-->
+          <section class="text-gray-600 body-font">
                     <div class="container px-5 py-24 mx-auto">
                       <div class="flex flex-col text-center w-full mb-20">
                       
@@ -221,7 +219,7 @@
 
                       </div>
                     </div>
-                  </section>
+          </section>
         </section>
   </section>
 <!-- Show more -->
