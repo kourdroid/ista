@@ -10,48 +10,106 @@
     <link rel="stylesheet" href="../style.css">
 
 </head>
-<body>
-    <section class="py-10">
-        <div class=" mx-auto ">
-            <div class="text-center text-3xl font-black text-slate-800 ">SUBMIT FORM
-            </div>
-        </div>
-    </section>
-    
-    <!-- gallery Section -->
 
-        <section>
-            <div class=" mx-auto text-3xl">
-                <input type="text" placeholder="&nbsp;&nbsp;Name" class="div1">
+
+
+
+<body class="gradient_bg bg-slate-200 overflow-x-hidden">
+        <!-- Navigation Bar -->
+        <header class="z-50 px-5 container mx-auto transition-all duration-300 ease-in-out">
+            <nav class=" z-50 flex justify-between items-center py-8 mx-auto">
+                <div
+                    class="uppercase leading-6 relative z-50 text-slate-800 font-black text-3xl hover:text-white hover:scale-105 hover:drop-shadow-xl transition-all  duration-200 ease-in">
+                    <a href="./index.html">
+                        ista<br>Zenata<span class="text-white">.</span>
+                    </a>
+                </div>
+                <div
+                    class=" z-50 container mx-auto right-0  nav-links duration-0 lg:static text-center justify-center absolute bg-slate-100 lg:border-none  lg:bg-transparent lg:backdrop-blur-none lg:shadow-none shadow-xl lg:min-h-fit min-h-[70vh] left-0 top-[-100%] lg:justify-end w-full flex items-center">
+                    <ul class="z-50 flex font-semibold text-xl lg:flex-row flex-col lg:items-center lg:gap-[4vw] gap-8">
+                        <li class=" transition-all duration-200 ease-in-out p-2">
+                            <a class="text-slate-800  transition-all ease-in"
+                                href="/index.html">Home</a>
+                        </li>
+                        <li class=" transition-all duration-200 ease-in-out p-2">
+                            <a class="text-slate-800   transition-al  ease-in"
+                                href="./about.html">About</a>
+                        </li>
+                        <li class=" transition-all duration-200 ease-in-out p-2">
+                            <a class="text-slate-800  transition-all ease-in"
+                                href="./activities.html">Activities</a>
+                        </li>
+                        <li class=" transition-all duration-200 ease-in-out p-2">
+                            <a class="text-slate-800  transition-all ease-in"
+                                href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class=" transition-all duration-200 ease-in-out p-2">
+                            <a class="text-slate-800  transition-all ease-in"
+                                href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6">
+                    <ion-icon class="lg:hidden relative z-50 text-3xl" onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl cursor-pointer lg:hidden text-slate-800 hover:text-slate-200 transition-all duration-100 ease-in"></ion-icon>
+                </div>
+                </nav>
+        </header>
+
+        <section class="py-10">
+            <div class="absolute z-[0] top-0 left-0 right-0 bottom-0"><img src="../Graphics/Gradient.png" alt=""></div>
+            <div class="container mx-auto ">
+                <div class="z-50 relative text-center text-4xl font-black text-slate-800 ">ACTIVITIES<span class="text-[#00D897]">.</spa>
+                </div>
+            </div>
             </div>
         </section>
-        <section>
-            <div class=" mx-auto text-3xl">
-                <input type="text" placeholder="&nbsp;&nbsp;Class" class="div1">
-    <br>
-    <br>
-    
-    
-    
-        <!-- Submit button -->
-        <section class="sec1">
-            <a class="bn47 text-center text-1xl font-black text-slate-100 " href="/">CHESS</a>
-            <a class="bn48 text-center text-1xl font-black text-slate-100" href="/">SOCCER</a>
-            <a class="bn49 text-center text-1xl font-black text-slate-100" href="/">PAINT</a>
-    </section>
-    <br><br>
-    <!-- Submit button -->
-    
-    <section class="container mx-auto w-44"><a
-            class=" text-center flex justify-center bg-[#00D897] py-2 px-14 font-black text-slate-800 tracking-widest "
-            href="">Submit</a></section>
 
+    <!-- chess -->
+    <div class="flex py-10 items-center justify-center">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <!-- chess -->
+          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-72">
+              <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="../Images/activities/Chess.png" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold uppercase text-white">chess</h1>
+            </div>
+          </div>
+          <!-- soccer -->
+          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-72">
+              <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="../Images/activities/soccer.png" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold uppercase text-white">Soccer</h1>
+            </div>
+          </div>
+          <!-- paint -->
+          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-72">
+              <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="../Images/activities/paint.png" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold uppercase text-white">Paint</h1>
+            </div>
+          </div>
+        </div>
+        <div class="fixed">
+        </div>
+      </div>
+        <!-- SUBMIT FORM -->
+        <section class="h-full">
+            <div class="container mx-auto justify-center items-center h-full text-slate-800 ">
+                <div class="text-4xl uppercase py-10 font-black text-center">SUBMIT FORM<span class="text-[#00D897]">.</span></div>
+                    <div class="flex flex-col lg:flex lg:flex-col-reverse gap-10 lg:flex lg:flex-row  justify-center items-center container mx-auto bg-[#BFCCD3] py-20 lg:py-20 px-20">
 
-
-
-
-
-
+                    </div>
+        </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 <script src="./gallery.js"></script>
 </body>
