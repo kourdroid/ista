@@ -16,7 +16,7 @@
     <header class="z-50 px-3 container mx-auto transition-all duration-300 ease-in-out">
         <nav class=" z-50 flex justify-between items-center py-8 mx-auto">
             <div
-                class="uppercase leading-6 text-slate-800 font-black text-3xl hover:text-white hover:scale-105 hover:drop-shadow-xl transition-all  duration-200 ease-in">
+                class="uppercase leading-6 relative z-50 text-slate-800 font-black text-3xl hover:text-white hover:scale-105 hover:drop-shadow-xl transition-all  duration-200 ease-in">
                 <a href="./index.html">
                     ista<br>Zenata<span class="text-white">.</span>
                 </a>
@@ -24,37 +24,39 @@
             <div
                 class=" z-50 container mx-auto right-0  nav-links duration-0 lg:static text-center justify-center absolute bg-slate-100 lg:border-none  lg:bg-transparent lg:backdrop-blur-none lg:shadow-none shadow-xl lg:min-h-fit min-h-[70vh] left-0 top-[-100%] lg:justify-end w-full flex items-center">
                 <ul class="z-50 flex font-semibold text-xl lg:flex-row flex-col lg:items-center lg:gap-[4vw] gap-8">
-                    <li class=" transition-all duration-200 ease-in-out p-2 hover:bg-[#00D897] lg:hover:bg-opacity-50">
+                    <li class=" transition-all duration-200 ease-in-out p-2">
                         <a class="text-slate-800  transition-all ease-in"
                             href="./index.html">Home</a>
                     </li>
-                    <li class=" transition-all duration-200 ease-in-out p-2 hover:bg-[#00D897] lg:hover:bg-opacity-50">
+                    <li class=" transition-all duration-200 ease-in-out p-2">
                         <a class="text-slate-800   transition-al  ease-in"
                             href="./Pages/about.html">About</a>
                     </li>
-                    <li class=" transition-all duration-200 ease-in-out p-2 hover:bg-[#00D897] lg:hover:bg-opacity-50">
+                    <li class=" transition-all duration-200 ease-in-out p-2">
                         <a class="text-slate-800  transition-all ease-in"
                             href="./Pages/activities.html">Activities</a>
                     </li>
-                    <li class=" transition-all duration-200 ease-in-out p-2 hover:bg-[#00D897] lg:hover:bg-opacity-50">
+                    <li class=" transition-all duration-200 ease-in-out p-2">
                         <a class="text-slate-800  transition-all ease-in"
                             href="./Pages/gallery.html">Gallery</a>
                     </li>
-                    <li class=" transition-all duration-200 ease-in-out p-2 hover:bg-[#00D897] lg:hover:bg-opacity-50">
+                    <li class=" transition-all duration-200 ease-in-out p-2">
                         <a class="text-slate-800  transition-all ease-in"
                             href="./Pages/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
             <div class="flex items-center gap-6">
-                <ion-icon onclick="onToggleMenu(this)" name="menu"
+                <ion-icon class="lg:hidden relative z-50 text-4xl" onclick="onToggleMenu(this)" name="menu"
                     class="text-3xl cursor-pointer lg:hidden text-slate-800 hover:text-slate-200 transition-all duration-100 ease-in"></ion-icon>
             </div>
+            </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero h-full flex justify-center items-center py-52 px-5">
-      <div class="absolute z-[0] top-[12.2%] -bottom-full right-0 left-0 bg-slate-200 bg-opacity-70 w-full md:hidden"></div>
+    <section class="hero h-full flex justify-center items-center py-32 px-5">
+      <div class="absolute z-[0] top-0 left-0 right-0 bottom-0"><img src="./Graphics/Gradient.png" alt=""></div>
+      <div class="absolute z-[0] top-0 -bottom-full right-0 left-0 bg-slate-200 bg-opacity-70 w-full md:hidden"></div>
       <div class="container mx-auto flex flex-col justify-center items-start space-y-14 w-full">
         <div class="w-full relative z-[1] px-10 md:px-0 md:w-2/5 text-center mx-auto md:mx-0 md:text-left text-6xl md:text-8xl font-extrabold text-slate-800">Unlock Your Future at ISTA ZENATA.</div>
         <div class="w-1/2 relative z-[1] text-center mx-auto md:mx-0 md:text-left font-semibold text-2xl text-slate-500">Explore Our Cutting-Edge Programs and Ignite Your Career Journey Today!</div>
