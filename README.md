@@ -1,6 +1,6 @@
 # ISTA Zenata Official Website
 
-![ISTA Zenata Logo](Graphics/ISTA ZENATA.png)
+![ISTA Zenata Logo](./Graphics/ISTA ZENATA.png)
 
 This repository contains the source code for the ISTA Zenata official website, a platform dedicated to providing comprehensive information about the International Science and Technology Academy located in Zenata, Morocco.
 
